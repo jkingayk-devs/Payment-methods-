@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Methods</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- JAZZCASH --> 
+    <div class="card hot" onclick="flip(this)">
+        <div class="badge hot-badge">HOT 🔥</div>
+        <div class="front"> 
+            <img src="images/jazzcash.png" alt="JazzCash">
+        <h3>JazzCash</h3>
+         <p>Tap to Pay</p> 
+         </div> <div class="back"> 
+             <h3>JazzCash Details</h3> 
+             <img class="qr" src="https://iconlogovector.com/uploads/images/2025/11/lg-691c164eec616-JazzCash.webp" alt="JazzCash QR">
+              <a class="download-btn" href="images/qr/jazzcash.png" download> Download QR </a>
+               <p>Number: 
+               <span id="jcnum">[EDIT LATER]</span>
+               </p> 
+               <button onclick="event.stopPropagation(); copyText('jcnum')">Copy</button> <p>IBAN: <span id="jciban">[EDIT LATER]</span></p> <button onclick="event.stopPropagation(); copyText('jciban')">Copy</button> </div> </div> <!-- EASYPAISA -->
+     <div class="card hot" onclick="flip(this)"> <div class="badge hot-badge">HOT 🔥</div> <div class="front"> <img src="images/easypaisa.png" alt="Easypaisa"> <h3>Easypaisa</h3> <p>Tap to Pay</p> </div> <div class="back"> <h3>Easypaisa Details</h3> <img class="qr" src="https://crystalpng.com/wp-content/uploads/2024/10/Easypaisa-logo.png" alt="Easypaisa QR"> <a class="download-btn" href="images/qr/easypaisa.png" download> Download QR </a> <p>Number: <span id="epnum">[EDIT LATER]</span></p> <button onclick="event.stopPropagation(); copyText('epnum')">Copy</button> <p>IBAN: <span id="epiban">[EDIT LATER]</span></p> <button onclick="event.stopPropagation(); copyText('epiban')">Copy</button> </div> </div> <!-- RAQAMI --> <div class="card linked" onclick="flip(this)"> <div class="badge linked-badge">LINKED 🔗</div> <div class="front"> <img src="images/raqami.png" alt="Raqami"> <h3>Raqami Bank</h3> <p>Tap to View</p> </div> <div class="back"> <h3>Raqami Bank</h3> <img class="qr" src="images/qr/raqami.png" alt="Raqami QR"> <a class="download-btn" href="images/qr/raqami.png" download> Download QR </a> <p>Account Name: [TEMP NAME]</p> <p>Account Number: [TEMP ACCOUNT]</p> <p>IBAN: [TEMP IBAN]</p> <p>Linked with Easypaisa</p> </div> </div> <!-- RAAST --> <div class="card linked" onclick="flip(this)"> <div class="badge linked-badge">LINKED 🔗</div> <div class="front"> <img src="images/raast.png" alt="Raast"> <h3>Raast</h3> <p>Tap to View</p> </div> <div class="back"> <h3>Raast Details</h3> <img class="qr" src="images/qr/raast.png" alt="Raast QR"> <a class="download-btn" href="images/qr/raast.png" download> Download QR </a> <p>Raast ID: [EDIT LATER]</p> <p>Linked Payment Method</p> </div> </div> <!-- WISE --> <div class="card" onclick="flip(this)"> <div class="front"> <img src="images/wise.png" alt="Wise"> <h3>Wise</h3> <p>International Transfer</p> </div> <div class="back"> <h3>Wise</h3> <img class="qr" src="images/qr/wise.png" alt="Wise QR"> <a class="download-btn" href="images/qr/wise.png" download> Download QR </a> <p>Email:</p> <p>jameelkingjk143@gmail.com</p> <p>Account: [EDIT LATER]</p> </div> </div> <!-- PAYONEER --> <div class="card" onclick="flip(this)"> <div class="front"> <img src="images/payoneer.png" alt="Payoneer"> <h3>Payoneer</h3> <p>Global Payments</p> </div> <div class="back"> <h3>Payoneer</h3> <img class="qr" src="images/qr/payoneer.png" alt="Payoneer QR"> <a class="download-btn" href="images/qr/payoneer.png" download> Download QR </a> <p>Email:</p> <p>jameelkingjk143@gmail.com</p> <p>Account: [EDIT LATER]</p> </div> </div> <!-- BINANCE --> <div class="card hot" onclick="flip(this)"> <div class="badge hot-badge">HOT 🔥</div> <div class="front"> <img src="images/binance.png" alt="Binance"> <h3>Binance Pay</h3> <p>Tap to Pay</p> </div> <div class="back"> <h3>Binance Pay</h3> <img class="qr" src="images/qr/binance.png" alt="Binance QR"> <a class="download-btn" href="images/qr/binance.png" download> Download QR </a> <p>ID: [EDIT LATER]</p> </div> </div> <!-- VISA --> <div class="card unavailable"> <div class="badge unavailable-badge">NOT AVAILABLE</div> <div class="front"> <img src="images/visa.png" alt="Visa"> <h3>Visa</h3> <p>Coming Soon</p> </div> </div> <!-- MASTERCARD --> <div class="card unavailable"> <div class="badge unavailable-badge">NOT AVAILABLE</div> <div class="front"> <img src="images/mastercard.png" alt="Mastercard"> <h3>Mastercard</h3> <p>Coming Soon</p> </div> </div> <!-- PAYPAK --> <div class="card unavailable"> <div class="badge unavailable-badge">NOT AVAILABLE</div> <div class="front"> <img src="images/paypak.png" alt="PayPak"> <h3>PayPak</h3> <p>Coming Soon</p> </div> </div> <!-- HBL --> <div class="card unavailable"> <div class="badge unavailable-badge">NOT AVAILABLE</div> <div class="front"> <img src="images/hbl.png" alt="HBL"> <h3>HBL Transfer</h3> <p>Coming Soon</p> </div> </div> <!-- UBL --> <div class="card unavailable"> <div class="badge unavailable-badge">NOT AVAILABLE</div> <div class="front"> <img src="images/ubl.png" alt="UBL"> <h3>UBL Transfer</h3> <p>Coming Soon</p> </div> </div> <!-- MEEZAN --> <div class="card unavailable"> <div class="badge unavailable-badge">NOT AVAILABLE</div> <div class="front"> <img src="images/meezan.png" alt="Meezan"> <h3>Meezan Transfer</h3> <p>Coming Soon</p> </div> </div>
+     <script src="script.js"></script>
+    </body>
+    </html>
