@@ -1,7 +1,7 @@
 Here’s a clean, professional **GitHub README.md** for your project (**JK PaySet Payment Gateway**) based on your final working structure (flip cards + QR + Formspree + multiple payment methods).
 
 ---
-
+Live preview https://jkingayk-devs.github.io/Payment-methods-/
 ```md
 # 💳 JK PaySet - Secure Payment Gateway
 
